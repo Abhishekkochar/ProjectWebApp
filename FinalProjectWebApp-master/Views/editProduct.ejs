@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+
+<header>
+        <ul >
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <% if(user != undefined){ %>
+                    <li style="float:right"><a href="/logout">Log out</a></li>
+                  
+                  <% } else{ %>  
+                    <li style="float:right"><a href="/login">Sign in</a></li>
+                <% } %>
+                <li><a href="/contact">Contact us</a></li>
+                
+                <li style="float:right"><a href="/cart">Shopping cart<span>
+                  <% if(session.cart) { %>
+                  <span class="badge"><%= session.cart.totalQty %></span>
+              <% } %></span></a></li>
+                
+            </ul>
+</header>
+<body>
+    <div style="text-align: center"> 
+        <h1> Edit product</h1>
+        <form action='/editProduct/<%= products.id %>' method="post">
+         <!---  <%= typeof msg != 'undefined' ? msg : '' %> 
+            <div class="file-field input-field">
+                <label>Upload file:</label>
+                <input name="image" type="file" >
+            </div>--> 
+           <!-- <form action="/addProduct" method="post"  enctype="application/x-www-form-urlencoded">
+            </form >-->
+            <label>Image:</label>
+            <input name="image" type="text" value="<%= products.image %>" required/>
+            <br>
+            <label>Name:</label>
+            <input name="name" type="text" value="<%= products.name %>" required/>
+            <br>
+            <label>Price:</label>
+            <input name="price" type="number" value="<%= products.price %>" required/>
+            <br>
+            <label>Description:</label>
+            <input name="description" type="text" value="<%= products.description %>" required/>
+            <br>
+           <!--- <label>Category</label>
+            <input name="category" type="text" value="<%= products.category%>"/>
+            <br>-->
+            <input type="submit" class="btn btn-success dis">
+        </form>
+        <br>
+       <!--<img class="lead" src="<%= typeof file != 'undefined' ? file : '' %>" alt="Recycle bag">--> 
+    </div>
+
+    <footer>
+  
+        </footer>
+</body>
+</html>

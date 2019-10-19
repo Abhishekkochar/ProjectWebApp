@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <% include ./partials/head %>
+    <script> function editing(){
+        editProfile = true;
+        console.log(editProfile);
+    }</script>
+    
+</head>
+<header>
+    <!--navigation bar-->
+    <% include ./partials/header %>
+</header>
+<body>
+    <div id="profileContent">
+        <% if(!editProfile) { %>
+            <form action="/profile/edit">
+        <p>Full Name: <%= loggedUser.fullName %></p>
+        <p>Password: ***********</p>
+        <p>Email Address: <%= loggedUser.email %></p>
+        <p>Contact Number: <%= loggedUser.contactNumber %></p>
+        <p>Billing Address: <%= loggedUser.billingAddress %></p>
+        <p>Delivery Address: <%= loggedUser.deliveryAddress %></p>
+        <input type="submit" class="btn btn-success dis"  label="Edit Profile" >
+    </form>
+        <% } else { %>
+            <form id="editProfile-Form" method="POST" action="/profile">
+                <label>Password:</label>
+                <input  type="password" name="password"/><br>
+                <label>Confirm Password:</label>
+                <input  type="password" name="confirmPassword"/><br>
+                <label>Full Name:</label>
+                <input type="text" name="fullName" placeholder="<%= loggedUser.fullName %>"/><br>
+                <label>Email address:</label>
+                <input type="text" name="email" placeholder="<%= loggedUser.email %>"/><br>
+                <label>Contact Number:</label>
+                <input type="text" name="contactNumber" placeholder="<%= loggedUser.contactNumber %>"/><br>
+                <label>Billing Address:</label>
+                <input type="text" name="billingAddress" placeholder="<%= loggedUser.billingAddress %>"/><br>
+                <label>Delivery Address:</label>
+                <input type="text" name="deliveryAddress" placeholder="<%= loggedUser.deliveryAddress %>"/><br>
+                <input class="btn btn-success" type="submit" label="Save Profile" >
+            </form>
+            <% } %>
+    </div>
+
+    
+        <br>
+        <br>
+        <footer>
+           
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %> 
+    </head>
+    <header>
+        <% include ./partials/header %>
+    </header>
+    <body>
+        <div>
+            <hr>
+            <div class="category" >
+                    <h4 class="one three" >Select a category</h4>
+                    <a class="one" href='/products'>All Products</a>
+
+                    <a class="one" href='/straw'>Straws</a>
+                    
+                    <a class="one"href='/bottles'>Bottles</a>
+                   
+                    <a class="one" href='/bag'>Recycle bag</a>
+                </div>
+            <section class="container">
+                    
+                <div class= "two">
+                    <% if(products.length>0){ %>
+                        <% for (var i=0; i<products.length; i++) { %>
+                                <div class="column">
+                                        <img class="img1" src='<%= products[i].image %>' class="cover-img">
+                                            <p><%= products[i].name %></p>
+                                            <h3>&dollar;<%= products[i].price %></h3>
+                                         <a href='/products/<%= products[i].id %>'><button class="btn btn-success">View product</button></a>
+                                       
+                                </div>
+                            <% }%>
+                    <% } else { %>
+                        no record found
+                        <% } %>  
+                </div>
+            </section>
+            <footer>
+                    <% include ./partials/footer %>
+                </footer>
+        </div>
+    </body>
+</html>

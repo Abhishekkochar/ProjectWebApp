@@ -1,0 +1,24 @@
+<!--header page-->
+<div class="header">
+  <ul >
+      <li><a href="/">Home</a></li>
+      <li><a href="/products">Products</a></li>
+      <% if(user != undefined){ %>
+          <li style="float:right"><a href="/logout">Log out</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <% if(userObject.userType == "Staff") { %>
+            <li><a href="/staff">Staff</a></li>
+        <% } %>
+        <% } else{ %>  
+          <li style="float:right"><a href="/login">Sign in</a></li>
+      <% } %>
+      <li><a href="/contact">Contact us</a></li>
+      
+      <li style="float:right"><a href="/cart">Shopping cart<span>
+        <% if(session.cart) { %>
+        <span class="badge"><%= session.cart.totalQty %></span>
+    <% } %></span></a></li>
+      
+  </ul>
+</div>
+

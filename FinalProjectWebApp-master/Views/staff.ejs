@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include ./partials/head %>
+</head>
+<header>
+    <% include ./partials/header %>
+</header>
+<body>
+    <% if(staffAccounts.length>0){ %>
+        <% for (var i=0; i<staffAccounts.length; i++) { %>
+                <div class="column">
+                            <p><%= staffAccounts[i].fullName %></p>
+                            <p><%= staffAccounts[i].workNumber %></p>
+                            <p><%= staffAccounts[i].mobileNumber %></p>
+                            <p><%= staffAccounts[i].address %></p>
+                            <p><%= staffAccounts[i].email %></p>
+                    </div>
+            <% }%>
+    <% } else { %>
+        no record found
+        <% } %>
+</body>
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+</html>

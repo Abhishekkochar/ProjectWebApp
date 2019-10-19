@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ./partials/head %> 
+    </head>
+    <header>
+        <% include ./partials/header %>
+    </header>
+    <body>
+        <div id="container">
+            <section class="">
+                <div class= "productid">
+                    <div class="imgdisplay">
+                        <img class="img2 img-responsive" src="<%= products.image %>" class="cover-img">
+                    </div>   
+                    <div class="detaildisplay">
+                        <h1 class="detail text-success"><%= products.name %></h1>
+                        <h1 class="detail text-success">$<%= products.price %></h1>
+                        <a href='/add-to-cart/<%= products._id %>' ><button class="btn btn-danger dis">Add to cart</button></a>
+                    </div>
+                    <div class="container1">
+                        <h1 class="detail" ><%= products.description%></h1>
+                    </div>
+                        <div >
+                             <a href='/editProduct/<%= products._id %>'><button class="btn">Edit product</button></a>
+                                
+                        </div> 
+                </div>
+                
+            </section>   
+           
+        </div>
+        <hr>
+        
+    </body>
+    <footer>
+           
+    </footer>
+</html>

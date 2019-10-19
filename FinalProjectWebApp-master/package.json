@@ -1,0 +1,43 @@
+{
+  "name": "finalprojectwebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deHewett/FinalProjectWebApp.git"
+  },
+  "author": "Dallas Hewett, Abhishek Kochar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deHewett/FinalProjectWebApp/issues"
+  },
+  "homepage": "https://github.com/deHewett/FinalProjectWebApp#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.2",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.2",
+    "express-validator": "5.3.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.6.8",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "save": "^2.4.0"
+  }
+}

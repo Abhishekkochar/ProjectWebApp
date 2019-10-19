@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <% include ./partials/head %>
+    </head>
+    <header>
+            <% include ./partials/header %>
+    </header>
+    <body>
+        <div >
+         
+            <hr>
+        <!--<div>
+                <h3>Select Category:</h3>
+                <form action="">
+                    <input type="checkbox" name="Straw" value="Straw"> Straw<br>
+                    <input type="checkbox" name="Recycle Bags" value="Bags"> Bags<br>
+                    <input type="checkbox" name="Bottles" value="Bottles" checked> Boottles<br><br>
+                </form>
+            </div>--> 
+            <div class="category" >
+                    <h4 class="one three" >Select a category</h4>
+                    <a class="one" href='/products'>All Products</a>
+
+                    <a class="one" href='/straw'>Straws</a>
+                    
+                    <a class="one"href='/bottles'>Bottles</a>
+                   
+                    <a class="one" href='/bag'>Recycle bag</a>
+                </div>
+            <section class="container">
+                
+                <div class= "two" > 
+                    <% if(products.length>0){ %>
+                        <% for (var i=0; i<products.length; i++) { %>
+                                <div class="column card">
+                                        <img class="img1 card-img-top" src='<%= products[i].image %>' class="cover-img">
+                                        <div class="card-body">
+                                            <p class="card-title"><%= products[i].name %></p>
+                                            <h3>&dollar;<%= products[i].price %></h3>
+                                            <a href='/products/<%= products[i].id %>'><button class="btn btn-success">View product</button></a>
+                                         </div>
+                                </div>
+                            <% }%>
+                    <% } else { %>
+                        no record found
+                        <% } %>
+                   
+                        
+                </div>
+               
+            </section>
+            
+        </div>
+        <footer>
+                <% include ./partials/footer %>
+            </footer>
+    </body>
+</html>

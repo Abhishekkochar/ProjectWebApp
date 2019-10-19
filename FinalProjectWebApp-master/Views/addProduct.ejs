@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+
+<header>
+       <!--navigation bar-->
+       <% include ./partials/header %>
+</header>
+<body>
+    <div style="text-align: center"> 
+        <h1> Add product</h1>
+        <form action="/addProduct" method="post" enctype="application/x-www-form-urlencoded">
+         <!--   <%= typeof msg != 'undefined' ? msg : '' %> 
+            <div class="file-field input-field">
+                <label>Upload file:</label>
+                <input name="image" type="text" >
+            </div>
+            <form action="/addProduct" method="post"  enctype="application/x-www-form-urlencoded">
+            </form >-->
+            <label>Upload file:</label>
+                <input name="image" type="text" >
+            <br>
+            <label>Name:</label>
+            <input name="name" type="text"/>
+            <br>
+            <label>Price:</label>
+            <input name="price" type="number"/>
+            <br>
+            <label>Description:</label>
+            <input name="description" type="text"/>
+            <br>
+            <label>Category</label>
+            <input name="category" type="text"/>
+            <br>
+            <input type="submit" class="btn btn-success" >
+        </form>
+        <br>
+       <!--<img class="lead" src="<%= typeof file != 'undefined' ? file : '' %>" alt="Recycle bag">--> 
+    </div>
+
+    <footer>
+        <% include ./partials/footer %>
+        </footer>
+</body>
+</html>

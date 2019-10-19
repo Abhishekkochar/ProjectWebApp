@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <% include ./partials/head %>
+</head>
+<header>
+    <!--navigation bar-->
+    <% include ./partials/header %>
+</header>
+<body>
+    <div id="container">
+    <!--first carousle-->
+        <h1 class="detail text-success">Eco-Bags</h1>
+        <div class="container">
+            <div class="row">
+                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="3" id="MultiCarousel"  data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                            <div class="item">    
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://cdn.shopify.com/s/files/1/1165/4040/products/11-2_700x700.jpg?v=1551738280' class="cover-img">
+                                                <p>$25</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='data:image/jpeg;base64,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' class="cover-img">
+                                                <p>$20</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://previews.123rf.com/images/kudryashka/kudryashka1210/kudryashka121000002/16125644-paper-bags-with-green-ecological-icons-design.jpg' class="cover-img">
+                                                <p>$15</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://5.imimg.com/data5/VO/TQ/MY-6299107/deal-especial-reusable-eco-friendly-jute-shopping-bag-with-coin-pouch-bag-500x500.jpg' class="cover-img">
+                                                <p>$10</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://i.ebayimg.com/images/g/bm8AAOSwHodc5rPm/s-l400.jpg' class="cover-img">
+                                                <p>$20</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://ae01.alicdn.com/kf/HTB1TQb8NbvpK1RjSZFqq6AXUVXaq/Eco-Friendly-Shopping-Bags-Waterproof-Travel-Custom-Reusable-Handbag-Women-Shoulder-Cloth-Pouch-Foldable-Grocery-Bulk.jpg' class="cover-img">
+                                                <p>$30</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://i.etsystatic.com/10592362/r/il/92b7dc/1987453119/il_794xN.1987453119_ik66.jpg' class="cover-img">
+                                                <p>$20</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                            <div class="item">
+                                    <div class ="pad15">
+                                            <img class="img1" src='https://miro.medium.com/max/730/1*mfwF7FxwMFOXbYZRE8mLVg.jpeg' class="cover-img">
+                                                <p>$24</p>
+                                             <a href='/bag'><button class="btn btn-success">View product</button></a>
+                                    </div>
+                            </div>
+                </div>
+                    <button class="btn btn-primary leftLst"><</button>
+                    <button class="btn btn-primary rightLst">></button>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-md-12 text-center">
+                    <br/><br/><br/>
+                    <hr/>
+                    <p>Settings</p>
+                    <p>Change data items for xs,sm,md and lg display items respectively. Ex:data-items="1,3,5,6"</p>
+                    <p>Change data slide for slides per click Ex:data-slide="1"</p>
+                </div>
+            </div>-->
+        </div>
+        <h1 class="detail text-success">Straw</h1>
+        <div class="container">
+            <div class="row">
+                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="3" id="MultiCarousel"  data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://www.greenpack.com.au/images/stories/virtuemart/product/Brown-paper-straws-BG80728.jpg' class="cover-img">
+                                                    <p>$15</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://i.ebayimg.com/images/g/px0AAOSwY5Ra5Wdq/s-l300.jpg' class="cover-img">
+                                                    <p>$20</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://cdn.shopify.com/s/files/1/1714/1921/products/5pcs-set-Reusable-Drinking-Straw-Stainless-Steel-Eco-Friendly-Straight-Bend-Metal-Straw-with-Cleaner-Brush_9030c941-5852-4ebe-b1ed-73f45a94f4cf.jpg?v=1541199956' class="cover-img">
+                                                    <p>$25</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://cdn.shopify.com/s/files/1/1714/1921/products/5pcs-set-Reusable-Drinking-Straw-Stainless-Steel-Eco-Friendly-Straight-Bend-Metal-Straw-with-Cleaner-Brush_9030c941-5852-4ebe-b1ed-73f45a94f4cf.jpg?v=1541199956' class="cover-img">
+                                                    <p>$30</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://replanet.me/wp-content/uploads/2018/08/straws_group.jpg' class="cover-img">
+                                                    <p>$20</p>
+                                                 <a href=/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://346iulk1loe3sukhbuvehh1d-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/stainless-straw_1024x1024.jpg' class="cover-img">
+                                                    <p>$15</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://gd.image-gmkt.com/304-ROSE-GOLD-GOLD-SILVER-STRAWS-REUSABLE-STAINLESS-STEEL-STRAW/li/645/202/1152202645.g_400-w_g.jpg' class="cover-img">
+                                                    <p>$25</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://i.etsystatic.com/17722707/r/il/c4e514/1655935591/il_794xN.1655935591_j0l8.jpg' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/straw'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+
+                    </div>
+                    <button class="btn btn-primary leftLst"><</button>
+                    <button class="btn btn-primary rightLst">></button>
+                </div>
+            </div>
+        </div>
+        <h1 class="detail text-success" >Bottles</h1>
+        <!--Third carousel-->
+        <div class="container">
+                <div class="row">
+                    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="3" id="MultiCarousel"  data-interval="1000">
+                        <div class="MultiCarousel-inner">
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-typo/default/dwe5048d0c/137806/137806-100-2.jpg?sw=566&sh=849&sm=fit' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-typo/default/dw22b0fed5/137806/137806-13-2.jpg?sw=566&sh=849&sm=fit' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://d34kame2p3gj5k.cloudfront.net/media/uploads/2018/09/05160004/white_marble_17oz_main.jpg' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://img1.theiconic.com.au/ox1qv3a5LkDiUlR6s2rgtpAt3PM=/fit-in/1000x0/filters:fill(ffffff):quality(85)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Ftypo-8439-437727-1.jpg' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://www.limetreekids.com.au/database/images/oasis-500-ml-insulated-drink-bottle-extra-25069.jpg' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ8NDQ0NDQ0NDRAODg0PDg8NDg8OFRIWGBURFhYZHSggGBolHhUVIT0hJSkrLi46GCA2ODMsNygvLisBCgoKDg0OGxAQGy0mICYtLTUtMCsvNS0tLS8tLS0tLS0tLS0uLS0tLS0tLS0tKy0tLS0tLS0tLS0tLSstLS0tLf/AABEIAP4AxgMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUCAwQGB//EAD8QAAEEAAMDCQUGBAYDAAAAAAEAAgMRBBIhBRMxBhQiQVFhcYGhIzJikcEzQlJysdGCkuHwB7LC0uLxk6Kj/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAMhEBAAIBAgQCCgEDBQAAAAAAAAECEQMxBBIhQVFhEyIycYGRobHR8MEjQuEFUnLC8f/aAAwDAQACEQMRAD8A+soCAgIJQEBAQEEoCAgICAgICAgICAglAQQglBggICAgIJQEBAQEEoCAgICAgICAglAQEBAQEGCAgICAgIJQEBAQEBAQSgICAgICCUEIJQQgIJQa0EoCAgICCUBAQEHHLiHFzmsLWhulnt/ZZtTVmJxDVp6MYzLxfKblPtDBSNOfCc3Lg10pDnbsnhmAd9FXGpaemV/oqYzhYO5Sxc2dNDtnZuJexhcYhHIwuIF5RTyQdOsKyZmP7lcUiZ9ho5Icvo9oEtfGYpAaIJDmu72u+hT0tqzizk6FbVmavcLSxiAgICCUEICAgICDBAQSgICAgIJQEBBUku3j6Lx7Q8A12nmsGpnnl6On7EPE8vG5xHbsNmbIC0zykPb3iIUH+ZUdP2ll/ZX+HjxDcK4OfjnDdn3tmRwsrL2h1gd9rROcd/kz1xnt83i+Q8IbipMm47+bSzTH+PeE5R4Km/ZdTaX2ELe8xKAgICAgICAgICDBAQEEoCAgIJQEBB5THcodnQSyxz4psb2SOtvttD2HKKP6LJbTtNpnDbXVrFYjLxfLblLgZsOW4bEQveHMIDoMxOutbxlKFdK0W2TnWpy7qTD8oJBGfbxbvJQY4Yd1kA6VV0TpVdatnTtKPpadpY8h9sxMxI5w+BtmgY8LDESbbWsUY7DxXL6UzPQprViJy++N4LUwpQEBAQEBAQEBAQYICAglAQEBAQSgIKbaOx8JiJc0+GgldQGaSFkhrssjgiddlMzkRgOeZhhcK6PdtMsPNoWtzOcQx7KGhGVxP7lXc8cu3Vn9Hb0mc9O8Nm0ti4MNlEWCwWvsmkYWB0jn5qyAZdNBx1Jv5qR16smtq2nmivud/J/ktg8LHHK2CEz01xl3MWcO7GuDdAO5R1JzPRt0K4pE5egVaYgICAgICAgICAgwQEBBKAgICAgICDmkHT8kTrs3EODXFgGfKctixYGl9otdjctMxWZjdU8mGGeCOYtIPtTbxRLnPsu8aPp3LRq+raY9zy+CrbUrF7b9frP4XsgoeYWZ6k9IYIglAQEBAQEBAQEBBggICAglAQEBAQCgwiFklFkOpgQbYo2tbTQALJodpNlSmcoRERswkFg/JcS3hzA3/fWkq4nMJXHRAQEEoCCEEoCAg1oJQEBAQSgICAgwmOh+SOwmAaLqbpag2PdTHHsaT6JG6FtldsmQmOibo8bu9Br6q3VjEsvB2mYmJbRo5w77/v0+arnbK6vS0wyUUxAQEBAQEBAQEGCCUBAQEBBKAgINE51A80Sq3RLqToYgzk9x35T+iRuhbZV7GcMncBddgofsVdqsPBz1lOHxTZmxzNFNksdvb+wUbU5ekrNPWjUxeO7qVTSICAgICAgICAgwQEEoCAgICCUBBxOkuV4/AGg+Js/oQupVVz+UbGzbtrC5rMwcbFuNii318bWivDzNcvO1f9Sil8Y6fuy9wGLZPGyWM2x7Q4XoQD2hU2rNZxLfpaldSsWrtLsaopSqNlHK5zTVig7xBIV+p1jLzeGnl1Zq4NiNLIZIBd4WYsaDxpjq/r8lPV6zE+MK+Giaxen+2V2Csj1EoCAgICAgICAgwQEBBKAgICAglB5Pb2KdHFOW8Z5pRZ6o4oiCfnGB/ErdGM2U8TbGlMeKmnjLp52Do65s/UyPpZnnuAH6BbqziIl4l6c95jt1z5Qu9h40tIxBuDBgjDQx8XSAU0X3MA+d9iq1a5jljrO7Vw2pNLelt0rtEeP/AI9mCsT2lFi3mDFGx0JWl7T2usBzfGzf8S019ajyuIidLW5+0pbGI8c8j7PGwh99RkaA0+mT5lRznT9y2axXicxtePrH7Dvw56De4V8tFRbdq059WGxcTEEoCAgICAgIMEBAQEEoCAgIBQeJ5SSjNHddEOLxdaS2XeHAfzBadCOjFxkxmPL+VHh5WtlazEl7YQyPeFp1dGHPOp8gtc5x03eXWKc0TbbPVnjduMxUjcSWmPZ+EJiw0AGXfyAe4AOrhdcNBxIJjp1xGO87/v2X8RabWicerG0fv18n0bk9i3T4WN7zclVJwsO40a66IWPWry2mHq8Jq+k0omd3RtHBtxEeR2ha4PY6ryvHA+HVXeo0tNZys1dKNSvLKkxmLMLN3iGua6KpIpQ0lmnEB3DhenHXgr4rFpzXvu8u9tTTpyXrttMLPZ04ljD2+64kjz1+qz6kYnDfoX56ZdSguEBAQEBAQEBBggIJQEBAQEEoIcg+f8sSWPe9tEPZuyONODQR/pI/KVr0dmHio/qZj3S81I7DyTkRyxSxjChzX4yc4SHDTgtLjID9qG60wCjnrWrU5tfGSmlpxbELKc4TeMxu0ccMU5zA7D4fDs3XseLaZdQNN3ROc31GwJ6ecYpHxn96s/Ecs2zqT07RG/x8Hqv8Pdvux3OgYmwNjkY6GJg0ZERVE9braST12s+vSa4mW3hNSJzSI2xtt1exWdtYlBzRe9J+cH/1auz2Ux7Vv3s2qKQgICAgICAgIMEBAQSgICAgIIcg8RyqDd45hy+2gAcx4JZJTiLBHuubob04hadHrGJY+LmaW5o7x83icVg8SWnFNmcRghFDYdlLIZDI0AFo7S7Xic3FXWpGY81elrWtSfKFfs8YSMgzYSSUAEUMQIG32lwBcR3AhX+j6er0ZJ1/Wnnnmjw2/h9f5B7PihwpljwkWE5yQ4MYHF5jA6Be9xLnnVx1P3lg14iLYicvV4S99TT5rRjwjyenVLUxcg5mjpv78p9P6Ls7Kv7p+DYouiCUEICCUEICAgwQEEoCAgIJQEEOQUW2NnDExOblY6RusRdpldp19hpWad+WyOvpekpMd+zn2ByfMUOIjxJZIMWA2SJo6IbThWbiT0vKlZqasTMTHZVw3DTp1mLd2jZf+H2BgkEj3S4gNNtjlyZAb0sAdL9FKeJtMYiEY4GnNzTMz+93smrM2skEFBzj3neDfqk7Kv7p+DNcdEBAQEBAQEBBggICAglAQEBBDkHG3ii1xzbQc2SmkFgOugvTj9VpppRMdXl63GWrqYrs3s2hI1xaWte0GyR0Tld7rh3cR8lz0UTHR2OLvWcWjP4nutMPM2Roc3geo6EeKptWaziW7T1K6learcuLEOQacupPaAPlf7ojMdcpXEUICAgICAgICDBAQEBBKAgIJQQ5BxXxSFvZSt3Ti4NeWXxZI1wA8COHmt8c0PAt6OZnrjylsjlstF6tjdGQO/h5da7hVF9o8pdUcxDAWmj06PXoQfqozXM9VsXmtImPNfQyZh8QrMOwkLHMYe1p35o82blxY0lcRsIiICAgICAgIIQYICAgIJQEBBKCHIONvHzRbCnOMmY9zN3FiWtcQBoZBRqqOq2RSsxnMw8a2tqVvNcRb7ubGSviLnuDInFo9mZWB5a8mgxvHTXwtXVmJ6bsWrW9Zm04jyz4+EN+hlAY55he4ND3AgatGcg9gorkTPL13dtWvpIiszyz3n6rzB4n2o0+3LiO1rWjo/VZ719X3PS4fV/qf8s/TZZFZ3pNTlxGyEREBAQEBAQEEINaCbQLQEBBKAgWgFBXw4hj3yNadY35XeP92PIruJhOt4nMR2Ve24cMx4kmL27zQFkeayOIJvwWvQtaYxDyeP0dKL8989fCFe/HMbTMJE5o13r3CJpcwisuYNseRV8UmetmGeIpWOXTifPOOv06NmxcI90ZkBLzE7VpvoscLzNF6AkHh2Je0ROPFHS0rXpNq9cdvDzeg2Q8OlzEEktytNaDroeQWfX6Vw9DgJzqZx2WomBygffYXt8BV/5gs2HrRLSyXMXEcA4tB7S3R3rY8lyXJnLO1xEtAtAtAQLQQgICDWgWgIJQLQEEoFoCCj2aPb4j81H/AMkn7qy20KuH9u374u/G4CPEx7uTMBYILSA4HuSl5pOYWa+hTWry2UG0dmYqzBBCzdtYHDI4CybAc8uOYnQ9q2aepTGZnr5vF1+F1ptyVrGI8PvPdOxnS4bZ/PJHi5ZcNmrqhE4a+/IuChq2i9uXwy08NozoUtftMx8svRTzAbQw8XAc2nLR1FxdH9GFZ8epM+bfMxGrWPKXBhcS6NrXOIBiONZrwp0jXR33AV8lOa5n5M8a3LHu5vv0d+B6DRDqTGwB5PEvIBJPeSSqbdZy1VjFYh1WouloFoFoFoFoFoFoFoNVoFoJtAtAtAtBNoFoFoKnAfa4jum+l/VWW2hXw/tWd4mqRkZ++x7h/CWf7vRRx0yum+LRXxz9MOdkjm49zeqXDNy/maXf8lbjOlE+EsPNNeNms7WrHzjKv2fh2u2RJAdWxkg3+EPbIf1Ksv01YlRwt51ODtE7xn8s96Q7DmTSXDAsLj97dFtm+vNG8n59icvSYgnVnNLT26T9PvCtx+La7Hc3uqxJcWcc5a+UBngfZiusWpRHqZQmf60xMbT09+XrIIt2wA+8bc43ZLnEk69epKyWnMvVrWa1iJ3Z2ouiAgICAgIFoFoNVoFoFoFoJtAtAtBNoFoKuAFnOXtFu3j3AdpDBQVk9lWh0m8+ZiZw7muJi6bTmLa+817LA8wFKkb1lVxV+WdPUr4/eHRjKe6CWPibaxx0p+jmg+bS3zKlTpmsq+JnnmmrT4ff+MMMAG53x0Wxzgxlp+6SDl9C5vi1SvtE+CnhZiupNe1v2Px74UG15+cRXE/2scIfI1up0funj/6k+Ssj1ZVxX0kTHh/C32RsuVgfM9kMWImfI/ePGeZrXuLsmlEAXwvxVVrV23bKU1pzPSv1n9+KywYplb10xDiHSurpOFXVaADhXcVTfdq0/Z3z5t1qCRaBaBaBaBaBaBaBaDVaCLQTaBaBaBaCbQLQLQV/OGxF730Gb8Ne48G3QBPdZA8+5TxnCvTtFeaZ8VNscvhdPgJL3UUhMMnXFbrYfy6jws9XDRjpF4edbUmL24e+3afDw+C8Di+Iissof0m8MuIbqHDudVeYUcYtn9wlFuak0nf/ALR+XJtvFPY6KWAZmTGKyPuPMja8Nb/m71OsdJiVd82vW9Nukz8/z92eB2PlxGJxDHERyy2wtaXdEHMa4WMxvT8LVGbdIiV01m17TWcRnfx/wuBhw9mXeMLQdaia0jxvgfJVzbE7L66Fb1xzZj3Ee73bd1QjroVwI7R48fNV2znq01isUiK7ItRdLQLQLQLQRaBaBaBaDPm/xeiBzf4vRA5v8Xogc3+L0QOb/F6IG4+L0QNx8Xognm/xeiBzf4vRBUyxxvM+GkP2peK0Bc3KAS3trTw0U8zGJQpETFqz3lT4SKaEBkusmH6LZKP2XUHdrD1H7pFcOGvMTt3eHempS3Lqb12ny8J8Y+0uvEzuMUj4g5skUeYtINmNp7O1ho+B7lyIjOJ2n9+rtrWvWbU9qv1j/H2dkcbJ3yRZbglbDK4A0ASA/ID1a075AcdITM4ie7XTk9JavacTj39Z93VaNYyJoY0SxtGgLXGVo+dlQ6z1X406xjrHu6uTEDDzncPlMznkezaAH5e0ni0d+i7m0dcIRp6Opblm/NPhH8rDdgkMbTQxujRwA0AFeSol6E42hPN/i9Fxw5v3+iBzfv8ARA5v3+iBzf4vRA5v3+iBzf4vRA5v8Xogc37/AEQZoIQRaCLQMyCMyOozoG8QN4g87yhhjex++DhGJM2+YCZMO/KKlocW9R/7IspPXoqtWJrOfH5ObA4ohobLK2QjSOZrxKw31Bx11/A/XsOlq7EdnnXtMRi85jtP79Yn4EOIe4maOMOxOElEMkAc0DEYeYZY9TQ0JBs9TTfBdt4dp+ku8NSZ9eY9avT31nb98m7Y4ma0NkZHTAGBsT8FI3QDXUlxPn/RaY8fuRS0dIivwx/LslxMsPHBSzgmuhG+N3iatp9FzETtZOlbROLaefp/h3wYrcwOnnhZhsxFRNIe+uDczgBbj2dSqmJmcROWuLV0aTeaxHlDbgHF0j3/AIwHcQ4AcBRHVQ9VVM5NKeaZt4u9FwgICAgICAgIMcqCMqBkQRkQYliOsTGuDExFBrdGUGpwIQcs7nNshwbY95wzNDu8WLB4cRwC7Eu1eYxGFeN47cxNZZ1guSCu9vvRnwpvatNLx4vO4nh7RPNFfl+FXszEsBcZInTlraEZc7IHOPRLnNOVzCM5Av3i8DTUTmJzujW1a6eYjPk9HBiyMgqNrX9ERvklhLnHg1pd0bPZ+q7MdFNc2mOkfWFnhYXgZxLjME0VcZdhZGHubo6vkCqLWjwiXoaenNYzma+WYlwTbWnfMWRSNe6S2sa3KTDCBq598HuJBJIFUAOGqIiIzKnU1NS9uWn7+HpdmYUQxhvEnVxGgvuVUzmWnS04064di4sEBAQEBAQEEIJQEBAQEEICCKQYlgQaJsJE8U+NrgeIIBQV7OTmCY7PHDunnQuiklisdhyuFphLnlz4nkjgZSXOZKHE25zJ5Y3OPxOaQXeanF7RtKq9K39qG3CcmMLD9nvwDxDpnyA/zEpz2nuV06V2hsxfJvCT/bskm7nzz5a7ModVeSjmUprEzmYbsBsHBYahBhoY64UwEjwJ4JLsdNlkAuDJAQEBAQEBAQEBAQEBAQECkCkEUgUgikCkE0gmkCkE0gUglApApApApApBFIFIFIFIJpApAQEBAQKQRSBSBSBSCaQKQTSAgICAgUgICBSBSAgICAgICAgICAgICAgICCUBAQEBAQEBBKAg/9k=' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://pa.namshicdn.com/product/58/4373/v1/1-zoom-desktop.jpg' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://dynamic.zacdn.com/kgQi9O3QUuLBtqMYWm6FGp9v7Sw=/fit-in/346x500/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/typo-8358-5957921-1.jpg' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                <div class="item">    
+                                        <div class ="pad15">
+                                                <img class="img1" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWAeKXwbmakY68mIwrjhh4vzLsdCq5uQNAX0vzi9mNt4JsUCe' class="cover-img">
+                                                    <p>$2o</p>
+                                                 <a href='/bottles'><button class="btn btn-success">View product</button></a>
+                                        </div>
+                                </div>
+                                
+                                
+                                
+                        </div>
+                        <button class="btn btn-primary leftLst"><</button>
+                        <button class="btn btn-primary rightLst">></button>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+        <br>
+        <br>
+        
+    </div>
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+</body>
+
+</html>
